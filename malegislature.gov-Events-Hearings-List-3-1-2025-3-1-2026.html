@@ -22,7 +22,7 @@
     <title>Hearings &amp; Events</title>
 
     <!-- Core CSS -->
-    <link href="/bundles/css/core?v=vYBQ8HPJ02DDnYm3TMOd3trJdH0KowIuKcfoyvAho2Y1" rel="stylesheet"/>
+    <link href="/bundles/css/core?v=IPQPNJC2i9hZupleAF36eLbbxwzeTVKJbWfG2hoLqVE1" rel="stylesheet"/>
 
 
     <!-- Fonts -->
@@ -69,10 +69,10 @@
         <!--Header-->
         <header>
     <div class="visible-lg-inline weatherBox">
-    <span class="weatherDate">March 28, 2025</span>
-    <img id="wicon" class="weatherIcon" src="https://openweathermap.org/img/w/02n.png" alt="Clouds">
+    <span class="weatherDate">April 01, 2025</span>
+    <img id="wicon" class="weatherIcon" src="https://openweathermap.org/img/w/04n.png" alt="Clouds">
     <span class="weatherDivider"> &#124; </span>
-    <span class="weatherStats">39&deg;F</span>
+    <span class="weatherStats">57&deg;F</span>
 </div>
 
     <div class="container">
@@ -91,17 +91,18 @@
                 <div id="loginFlyout" class="dropdown-menu dropdownLogin" aria-live="assertive">
                     <h2 class="text-center loginTitle">MyLegislature</h2>
 <p class="sr-only">Use MyLegislature to follow bills, hearings, and legislators that interest you.</p>
-<form action="/Account/Login?isModal=False" class="form-horizontal clearfix" data-ajax="true" data-ajax-begin="inProgress" data-ajax-complete="loginFlyoutFormOnComplete" data-ajax-method="POST" id="loginFlyoutForm" method="post" role="form"><input name="__RequestVerificationToken" type="hidden" value="jebi5-wOv_vBEJBrv7WYxRjEXWpO84M5SeJ0ac_nQ9zIzG3ZNg9N5Y6jVWDq6jOOimpq3nkOU4kmHIaj0KhzFzwt2481" />
-<legend class="text-center">Sign in with MyLegislature Account</legend>
+<form action="/Account/Login?isModal=False" class="form-horizontal clearfix" data-ajax="true" data-ajax-begin="inProgress" data-ajax-complete="loginFlyoutFormOnComplete" data-ajax-method="POST" id="loginFlyoutForm" method="post" role="form"><input name="__RequestVerificationToken" type="hidden" value="V22q8079YC0Iu6jpLbkB238HoXJTFdszLLRAOoUk6XNo5gcApZ-d21Vh7_jukQYT83RBhpgM-zwpk1KjATB2FosuFyQ1" />
+<legend class="text-center legSignIn">Sign in with MyLegislature Account</legend>
+<span class="requiredFields">* Indicates required fields</span>
 <div class="form-group">
-    <label class="col-sm-3 control-label" for="Email">Email</label>
+    <label class="col-sm-3 control-label" for="Email">Email*</label>
     <div class="col-sm-9">
         <input class="form-control" data-val="true" data-val-email="Invalid email address." data-val-required="Email address is required." id="Email" name="Email" type="text" value="" />
         <span class="field-validation-valid help-block" data-valmsg-for="Email" data-valmsg-replace="true"></span>
     </div>
 </div>
 <div class="form-group passwordField">
-    <label class="col-sm-3 control-label" for="Password">Password</label>
+    <label class="col-sm-3 control-label" for="Password">Password*</label>
     <div class="col-sm-9 clearfix">
         <input autocomplete="false" class="form-control" data-val="true" data-val-required="Password required." id="Password" name="Password" type="password" />
         <span class="field-validation-valid help-block" data-valmsg-for="Password" data-valmsg-replace="true"></span>
@@ -213,7 +214,7 @@
                     placeholder="Search Bills..."/>
                 <div class="input-group-btn typeahead-button">
 
-                    <button type="submit" class="btn btn-primary searchButton" aria-labelledby="billsSearch">
+                    <button type="submit" class="btn btn-primary searchButton" aria-label="Search the Legislature">
 <span class="fa fa-search"></span><span class="sr-only">Search</span> 
                     </button>
 </div>
@@ -263,7 +264,7 @@
                     placeholder="Search General Laws..."/>
                 <div class="input-group-btn typeahead-button">
 
-                    <button type="submit" class="btn btn-primary searchButton" aria-labelledby="generalLawsSearch">
+                    <button type="submit" class="btn btn-primary searchButton" aria-label="Search the Legislature">
 <span class="fa fa-search"></span><span class="sr-only">Search</span> 
                     </button>
 </div>
@@ -329,7 +330,7 @@
                     placeholder="Search Session Laws..."/>
                 <div class="input-group-btn typeahead-button">
 
-                    <button type="submit" class="btn btn-primary searchButton" aria-labelledby="sessionLawsSearch">
+                    <button type="submit" class="btn btn-primary searchButton" aria-label="Search the Legislature">
 <span class="fa fa-search"></span><span class="sr-only">Search</span> 
                     </button>
 </div>
@@ -466,71 +467,79 @@
         <div class="yamm-content homeBudget">
             <h2><a href="/Budget">FY 2026 Budget</a></h2>
             <ol>
-                    <li class="current">
+                    <li class="current" aria-current="step">
                         <a href="/Budget/GovernorsBudget">
                             Governor&#39;s Budget
                             <span class="indicator" aria-hidden="true"></span>
                                                             <span class="indicatorLine right" aria-hidden="true"></span>
                         </a>
                     </li>
-                    <li class="">
+                    <li class="" aria-current="">
                         <a href="/Budget/HouseWaysMeansBudget">
+                                <span class="sr-only">Not completed:</span>
                             House Ways &amp; Means Budget
                             <span class="indicator" aria-hidden="true"></span>
                                 <span class="indicatorLine left" aria-hidden="true"></span>
                                                             <span class="indicatorLine right" aria-hidden="true"></span>
                         </a>
                     </li>
-                    <li class="">
+                    <li class="" aria-current="">
                         <a href="/Budget/HouseDebate">
+                                <span class="sr-only">Not completed:</span>
                             House Debate
                             <span class="indicator" aria-hidden="true"></span>
                                 <span class="indicatorLine left" aria-hidden="true"></span>
                                                             <span class="indicatorLine right" aria-hidden="true"></span>
                         </a>
                     </li>
-                    <li class="">
+                    <li class="" aria-current="">
                         <a href="/Budget/HouseBudget">
+                                <span class="sr-only">Not completed:</span>
                             House Budget
                             <span class="indicator" aria-hidden="true"></span>
                                 <span class="indicatorLine left" aria-hidden="true"></span>
                                                             <span class="indicatorLine right" aria-hidden="true"></span>
                         </a>
                     </li>
-                    <li class="">
+                    <li class="" aria-current="">
                         <a href="/Budget/SenateWaysMeansBudget">
+                                <span class="sr-only">Not completed:</span>
                             Senate Ways &amp; Means Budget
                             <span class="indicator" aria-hidden="true"></span>
                                 <span class="indicatorLine left" aria-hidden="true"></span>
                                                             <span class="indicatorLine right" aria-hidden="true"></span>
                         </a>
                     </li>
-                    <li class="">
+                    <li class="" aria-current="">
                         <a href="/Budget/SenateDebate">
+                                <span class="sr-only">Not completed:</span>
                             Senate Debate
                             <span class="indicator" aria-hidden="true"></span>
                                 <span class="indicatorLine left" aria-hidden="true"></span>
                                                             <span class="indicatorLine right" aria-hidden="true"></span>
                         </a>
                     </li>
-                    <li class="">
+                    <li class="" aria-current="">
                         <a href="/Budget/SenateBudget">
+                                <span class="sr-only">Not completed:</span>
                             Senate Budget
                             <span class="indicator" aria-hidden="true"></span>
                                 <span class="indicatorLine left" aria-hidden="true"></span>
                                                             <span class="indicatorLine right" aria-hidden="true"></span>
                         </a>
                     </li>
-                    <li class="">
+                    <li class="" aria-current="">
                         <a href="/Budget/ConferenceCommittee">
+                                <span class="sr-only">Not completed:</span>
                             Conference Committee
                             <span class="indicator" aria-hidden="true"></span>
                                 <span class="indicatorLine left" aria-hidden="true"></span>
                                                             <span class="indicatorLine right" aria-hidden="true"></span>
                         </a>
                     </li>
-                    <li class="">
+                    <li class="" aria-current="">
                         <a href="/Budget/FinalBudget">
+                                <span class="sr-only">Not completed:</span>
                             Final Budget
                             <span class="indicator" aria-hidden="true"></span>
                                 <span class="indicatorLine left" aria-hidden="true"></span>
@@ -586,7 +595,7 @@
                     placeholder="Search Legislators..."/>
                 <div class="input-group-btn typeahead-button">
 
-                    <button type="submit" class="btn btn-primary searchButton" aria-labelledby="legisSearch">
+                    <button type="submit" class="btn btn-primary searchButton" aria-label="Search the Legislature">
 <span class="fa fa-search"></span><span class="sr-only">Search</span> 
                     </button>
 </div>
@@ -727,7 +736,7 @@
                     placeholder="Search Events..."/>
                 <div class="input-group-btn typeahead-button">
 
-                    <button type="submit" class="btn btn-primary searchButton" aria-labelledby="eventSearch">
+                    <button type="submit" class="btn btn-primary searchButton" aria-label="Search the Legislature">
 <span class="fa fa-search"></span><span class="sr-only">Search</span> 
                     </button>
 </div>
@@ -847,7 +856,7 @@
                     placeholder="Search Committees..."/>
                 <div class="input-group-btn typeahead-button">
 
-                    <button type="submit" class="btn btn-primary searchButton" aria-labelledby="committeeSearch">
+                    <button type="submit" class="btn btn-primary searchButton" aria-label="Search the Legislature">
 <span class="fa fa-search"></span><span class="sr-only">Search</span> 
                     </button>
 </div>
@@ -1103,7 +1112,7 @@
                     placeholder="Search the Legislature..."/>
                 <div class="input-group-btn typeahead-button">
 
-                    <button type="submit" class="btn btn-primary searchButton" aria-labelledby="detailSearch">
+                    <button type="submit" class="btn btn-primary searchButton" aria-label="Search the Legislature">
 <span class="fa fa-search"></span><span class="sr-only">Search</span> 
                     </button>
 </div>
@@ -1421,7 +1430,7 @@ Virtual Hearing                                                               </
                         </td>
                                     <td>
                         <a href="/GetMap/422" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
-                            A-1                                               and Virtual
+                            A-1                                                and Virtual
                         </a>
                                                         </td>
                     <td class="video">
@@ -1604,7 +1613,7 @@ Doherty Memorial High School and Virtual                                        
                         </td>
                                     <td>
                         <a href="/GetMap/422" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
-                            A-1                                               and Virtual
+                            A-1                                                and Virtual
                         </a>
                                                         </td>
                     <td class="video">
@@ -1639,7 +1648,7 @@ Doherty Memorial High School and Virtual                                        
                         </td>
                                     <td>
                         <a href="/GetMap/422" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
-                            A-1                                              
+                            A-1                                               
                         </a>
                                                         </td>
                     <td class="video">
@@ -1700,7 +1709,6 @@ Virtual Hearing                                                               </
                 <tr>
 <td class="text-center eventDate" rowspan="1">
                             <div>
-                                    <span class="today"><span class="sr-only">Go to </span>TODAY</span>
                                                                     <span class="month">MAR</span>
                                     <span class="day">28</span>
                                     <span class="month">2025</span>
@@ -1712,7 +1720,7 @@ Virtual Hearing                                                               </
         </a>
                     </td>
                     <td>11:00 am</td>
-                    <td>Confirmed</td>
+                    <td>Completed</td>
                         <td>Hearing</td>
                                             <td>
                             <a href="/Events/Hearings/Detail/5097" class="">
@@ -1723,9 +1731,9 @@ Virtual Hearing                                                               </
 Clinton Town Hall, 242 Church Street and Virtual                                                        </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5097"
-           title="Upcoming">
+           title="Archived">
             <span class="fa fa-video-camera"></span>
-            <span>Upcoming</span>
+            <span>Archived</span>
         </a>
 
                     </td>
@@ -1779,7 +1787,7 @@ Cape Cod Community College and Virtual                                          
         </a>
                     </td>
                     <td>1:00 pm</td>
-                    <td>Confirmed</td>
+                    <td>Completed</td>
                         <td>Hearing</td>
                                             <td>
                             <a href="/Events/Hearings/Detail/5104" class="">
@@ -1790,9 +1798,9 @@ Cape Cod Community College and Virtual                                          
 A-2  and Virtual                                                        </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5104"
-           title="Upcoming">
+           title="Archived">
             <span class="fa fa-video-camera"></span>
-            <span>Upcoming</span>
+            <span>Archived</span>
         </a>
 
                     </td>
@@ -1800,6 +1808,7 @@ A-2  and Virtual                                                        </td>
                 <tr>
 <td class="text-center eventDate" rowspan="3">
                             <div>
+                                    <span class="today"><span class="sr-only">Go to </span>TODAY</span>
                                                                     <span class="month">APR</span>
                                     <span class="day">1</span>
                                     <span class="month">2025</span>
@@ -1845,7 +1854,11 @@ Virtual Hearing                                                               </
                         </a>
                                                         </td>
                     <td class="video">
-                                <span class="sr-only">No video available.</span>
+                                <a href="/Events/Hearings/Detail/5102"
+           title="Upcoming">
+            <span class="fa fa-video-camera"></span>
+            <span>Upcoming</span>
+        </a>
 
                     </td>
                 </tr>
@@ -1865,7 +1878,7 @@ Virtual Hearing                                                               </
                         </td>
                                     <td>
                         <a href="/GetMap/422" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
-                            A-1                                               and Virtual
+                            A-1                                                and Virtual
                         </a>
                                                         </td>
                     <td class="video">
@@ -2046,13 +2059,37 @@ State House (Room TBD) and Virtual                                              
                     </td>
                 </tr>
                 <tr>
-<td class="text-center eventDate" rowspan="1">
+<td class="text-center eventDate" rowspan="2">
                             <div>
                                                                     <span class="month">APR</span>
                                     <span class="day">9</span>
                                     <span class="month">2025</span>
                             </div>
                         </td>
+                    <td>
+        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+            <span class="fa fa-star fa-fw mlNotFollowing"></span>
+        </a>
+                    </td>
+                    <td>10:30 am</td>
+                    <td>Confirmed</td>
+                        <td>Hearing</td>
+                                            <td>
+                            <a href="/Events/Hearings/Detail/5118" class="">
+                                <span>Joint Committee on Cannabis Policy</span>
+                            </a>
+                        </td>
+                                    <td>
+                        <a href="/GetMap/423" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
+                            B-1           and Virtual
+                        </a>
+                                                        </td>
+                    <td class="video">
+                                <span class="sr-only">No video available.</span>
+
+                    </td>
+                </tr>
+                <tr>
                     <td>
         <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
@@ -2068,7 +2105,7 @@ State House (Room TBD) and Virtual                                              
                         </td>
                                     <td>
                         <a href="/GetMap/422" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
-                            A-1                                               and Virtual
+                            A-1                                                and Virtual
                         </a>
                                                         </td>
                     <td class="video">
@@ -2077,7 +2114,7 @@ State House (Room TBD) and Virtual                                              
                     </td>
                 </tr>
                 <tr>
-<td class="text-center eventDate" rowspan="1">
+<td class="text-center eventDate" rowspan="2">
                             <div>
                                                                     <span class="month">APR</span>
                                     <span class="day">10</span>
@@ -2099,7 +2136,63 @@ State House (Room TBD) and Virtual                                              
                         </td>
                                     <td>
                         <a href="/GetMap/422" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
-                            A-1                                               and Virtual
+                            A-1                                                and Virtual
+                        </a>
+                                                        </td>
+                    <td class="video">
+                                <span class="sr-only">No video available.</span>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+            <span class="fa fa-star fa-fw mlNotFollowing"></span>
+        </a>
+                    </td>
+                    <td>1:00 pm</td>
+                    <td>Confirmed</td>
+                        <td>Hearing</td>
+                                            <td>
+                            <a href="/Events/Hearings/Detail/5119" class="">
+                                <span>Special Legislative Commission on Emerging Firearm Technology</span>
+                            </a>
+                        </td>
+                                    <td>
+A-2/Virtual                                                        </td>
+                    <td class="video">
+                                <a href="/Events/Hearings/Detail/5119"
+           title="Upcoming">
+            <span class="fa fa-video-camera"></span>
+            <span>Upcoming</span>
+        </a>
+
+                    </td>
+                </tr>
+                <tr>
+<td class="text-center eventDate" rowspan="1">
+                            <div>
+                                                                    <span class="month">APR</span>
+                                    <span class="day">14</span>
+                                    <span class="month">2025</span>
+                            </div>
+                        </td>
+                    <td>
+        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+            <span class="fa fa-star fa-fw mlNotFollowing"></span>
+        </a>
+                    </td>
+                    <td>10:00 am</td>
+                    <td>Confirmed</td>
+                        <td>Hearing</td>
+                                            <td>
+                            <a href="/Events/Hearings/Detail/5120" class="">
+                                <span>Joint Committee on Elder Affairs</span>
+                            </a>
+                        </td>
+                                    <td>
+                        <a href="/GetMap/422" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
+                            A-1                                               
                         </a>
                                                         </td>
                     <td class="video">
@@ -2270,12 +2363,11 @@ State House (Room TBD) and Virtual                                              
 </footer>
 
     <!--Modals-->
-    <div class="modal fade" tabindex="-1" role="dialog" id="registrationModal">
-    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal fade" tabindex="-1" role="dialog" aria-modal="true" id="registrationModal">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content registrationModal">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span class="sr-only">Close dialog</span>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close dialog">
                     <span aria-hidden="true">&times;</span>
                 </button>
                 <h4 class="modal-title">Register for MyLegislature</h4>
@@ -2289,7 +2381,7 @@ State House (Room TBD) and Virtual                                              
                     </div>
                     <div class="col-xs-12 col-sm-7 vDivide">
                         <h5 class="text-center">Register With Your Email Address</h5>
-<form action="/Account/Register" data-ajax="true" data-ajax-begin="inProgress" data-ajax-method="POST" data-ajax-success="registrationModalFormOnSuccess" id="registrationModalForm" method="post" role="form"><input name="__RequestVerificationToken" type="hidden" value="N2lofB6-aGzjT52MOdLdfuUqIotH8PXb-6u_GftjD0GYTImhkgtP8wFw9ax4vz0Ef-oXsyqaXxNroAVvdGJ3GKrEi801" />
+<form action="/Account/Register" data-ajax="true" data-ajax-begin="inProgress" data-ajax-method="POST" data-ajax-success="registrationModalFormOnSuccess" id="registrationModalForm" method="post" role="form"><input name="__RequestVerificationToken" type="hidden" value="fAL_2mSjew77sMOhQGAdy4rRUhrtZadWHkJSNAb5NzqbUywbTpy8XL6AcWUDnLXB7W5RfHWdRk73edrDqgMFyL2AKQM1" />
 
 
 <div class="form-group">
@@ -2333,13 +2425,12 @@ State House (Room TBD) and Virtual                                              
         </div>
     </div>
 </div>
-    <div class="modal fade" tabindex="-1" role="dialog" id="loginModal">
-    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal fade" tabindex="-1" role="dialog" id="loginModal" aria-modal="true">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content loginModal">
             <div class="modal-header">
-                <button class="close" data-dismiss="modal" type="button" aria-label="Close">
+                <button class="close" data-dismiss="modal" type="button" aria-label="Close dialog">
                     <span aria-hidden="true">&times;</span>
-                    <span class="sr-only">Close dialog</span>
                 </button>
                 <h4 class="modal-title">Sign in to MyLegislature</h4>
             </div>
@@ -2352,10 +2443,10 @@ State House (Room TBD) and Virtual                                              
                     </div>
                     <div class="col-xs-12 col-sm-7 vDivide">
                         <h5 class="text-center sr-only">Sign In With Your MyLegislature Account</h5>
-<form action="/Account/Login?isModal=True" data-ajax="true" data-ajax-begin="inProgress" data-ajax-complete="loginModalFormOnComplete" data-ajax-method="POST" id="loginModalForm" method="post" role="form"><input name="__RequestVerificationToken" type="hidden" value="exYmM5JmxKrvGZ80dG3O34iIZAkaWG1b3UlxC8QFK93vLj-jS9I-lcAXHm4X9Sm0o8w1uWm5PIQeSpVzyxBJkGQ4K841" />
+<form action="/Account/Login?isModal=True" data-ajax="true" data-ajax-begin="inProgress" data-ajax-complete="loginModalFormOnComplete" data-ajax-method="POST" id="loginModalForm" method="post" role="form"><input name="__RequestVerificationToken" type="hidden" value="Wek72adHxNP95otlyd7YE94KHIz-zIB1EAhhWDVvtxm2npHtpUUWmHK2iwX-cqPxWsOI4S5mapvaHLNIDj3ptPaD_kE1" />
 
 <div class="form-group">
-    <label class="sr-only" for="loginEmail">Email</label>
+    <label class="sr-only" for="loginEmail">Email*</label>
     <div class="input-group">
         <span class="input-group-addon"><span class="fa fa-user fa-fw"></span></span>
         <input class="form-control" data-val="true" data-val-email="Invalid email address." data-val-required="Email address is required." id="loginEmail" name="Email" placeholder="Email Address" type="text" value="" />
@@ -2363,7 +2454,7 @@ State House (Room TBD) and Virtual                                              
     <span class="field-validation-valid help-block" data-valmsg-for="loginEmail" data-valmsg-replace="true"></span>
 </div>
 <div class="form-group passwordField">
-    <label class="sr-only" for="loginPassword">Password</label>
+    <label class="sr-only" for="loginPassword">Password*</label>
     <div class="input-group">
         <span class="input-group-addon"><span class="fa fa-lock fa-fw"></span></span>
         <input autocomplete="false" class="form-control" data-val="true" data-val-required="Password required." id="loginPassword" name="Password" placeholder="Password" type="password" />
@@ -2387,19 +2478,18 @@ State House (Room TBD) and Virtual                                              
     </div>
 </div>
 
-    <div class="modal fade" tabindex="-1" role="dialog" id="forgotPasswordModal">
-    <div class="modal-dialog" role="document">
+    <div class="modal fade" tabindex="-1" role="dialog" aria-modal="true" id="forgotPasswordModal">
+    <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close dialog">
                     <span aria-hidden="true">&times;</span>                    
-                    <span class="sr-only">Close dialog</span>
                 </button>
             <h4 class="modal-title">Forgot Password</h4>
             </div>
             <div class="modal-body">
 <form action="/Account/ForgotPassword" data-ajax="true" data-ajax-complete="forgotPasswordModalFormOnComplete" data-ajax-method="POST" id="forgotPasswordModalForm" method="post" onsubmit="if($(this).valid()){ $(this).find(&#39;.fnEnd&#39;).show(); $(this).find(&#39;.fnStart&#39;).hide(); }" role="form">    <p><strong>Please enter your email address.</strong> If there is an account associated with that address, a password reset link will be mailed to you.</p>
-<input name="__RequestVerificationToken" type="hidden" value="dquCy94zQdGRoOe6YSHAgQP_Yuo-c6Jp-fMDDM1qdIKFB0ZRH6yUpp2lSj7R8o3kvOMXiRIrmCOwrWHwhSgRC5JBkAU1" />    <div class="row">
+<input name="__RequestVerificationToken" type="hidden" value="CwuHqx0dO4O_yCycDmRbr_1PIZWoBbyhFUi81grKsG_G6_TJ2fjrFRjOZH7afWOkiYCnEqPRLrEaZX9a4SOffs_9N2k1" />    <div class="row">
         <div class="form-group clearfix">
             <div class="col-sm-12 col-md-9">
                 <label class="sr-only" for="EmailAddress">Email Address</label>
@@ -2420,12 +2510,11 @@ State House (Room TBD) and Virtual                                              
     </div>
 </div>
 
-    <div class="modal fade fnModalStack" tabindex="-1" role="dialog" id="exclusiveFeatureModal">
-  <div class="modal-dialog exclusiveModal" role="document">
+    <div class="modal fade fnModalStack" tabindex="-1" role="dialog" aria-modal="true" id="exclusiveFeatureModal">
+  <div class="modal-dialog exclusiveModal">
     <div class="modal-content">
       <div class="modal-header">
-          <button class="close" data-dismiss="modal" type="button" aria-label="Close">
-              <span class="sr-only">Close dialog</span>
+          <button class="close" data-dismiss="modal" type="button" aria-label="Close dialog">
               <span aria-hidden="true">&times;</span>
           </button>
         <h4 class="modal-title">Sign In Required</h4>
@@ -2449,41 +2538,40 @@ State House (Room TBD) and Virtual                                              
   </div>
 </div>
 
-    <div id="locationModal" class="modal fade fnModalRemoveData fnModalStack" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
+    <div id="locationModal" class="modal fade fnModalRemoveData fnModalStack" tabindex="-1" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
         <div class="modal-content">
             
         </div>
     </div>
 </div>
 
-    <div id="billModal" class="modal fade fnModalRemoveData modalFixedHeight" tabindex="-1" role="dialog">
-    <div class="modal-dialog printPreviewModal" role="document">
+    <div id="billModal" class="modal fade fnModalRemoveData modalFixedHeight"tabindex="-1" role="dialog" aria-modal="true">
+    <div class="modal-dialog printPreviewModal">
         <div class="modal-content">
             
         </div>
     </div>
 </div>
-<div id="amendmentModal" class="modal fade fnModalRemoveData modalFixedHeight" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
+<div id="amendmentModal" class="modal fade fnModalRemoveData modalFixedHeight" tabindex="-1" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
         <div class="modal-content">
             
         </div>
     </div>
 </div>
-<div id="downloadModal" class="modal fade fnModalRemoveData modalFixedHeight" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
+<div id="downloadModal" class="modal fade fnModalRemoveData modalFixedHeight" tabindex="-1" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
         <div class="modal-content">
             
         </div>
     </div>
 </div>
-    <div class="modal" id="mobileSearch" tabindex="-1" role="dialog">
+    <div class="modal" id="mobileSearch" tabindex="-1" role="dialog" aria-modal="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span class="sr-only">Close dialog</span>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close dialog">
                     <span aria-hidden="true">&times;</span>
                 </button>
                 <h4 class="modal-title">Search The Legislature</h4>
@@ -2511,7 +2599,7 @@ State House (Room TBD) and Virtual                                              
                     placeholder="Search the Legislature..."/>
                 <div class="input-group-btn typeahead-button">
 
-                    <button type="submit" class="btn btn-primary searchButton" aria-labelledby="mobileFullSearch">
+                    <button type="submit" class="btn btn-primary searchButton" aria-label="Search the Legislature">
 <span class="fa fa-search"></span><span class="sr-only">Search</span> 
                     </button>
 </div>
@@ -2527,8 +2615,8 @@ State House (Room TBD) and Virtual                                              
     </div>
 </div>
 
-    <div id="badgeModal" class="modal fade fnModalRemoveData fnModalStack" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
+    <div id="badgeModal" class="modal fade fnModalRemoveData fnModalStack" tabindex="-1" role="dialog" aria-modal="true">
+  <div class="modal-dialog">
     <div class="modal-content">
       
     </div>
@@ -2536,7 +2624,7 @@ State House (Room TBD) and Virtual                                              
 </div>
 
     <script src="/bundles/bootstrap?v=M4Nk6kIOwMFflsEKET0iPL9i5YBqbzMzvUOrd8gyCnw1"></script>
-<script src="/bundles/common?v=vmV3WMSgLt3ee76DxWJuz27opgddTRyR9ueAsRwtzcY1"></script>
+<script src="/bundles/common?v=cSu4wWfDIHVY9faz_ccao6uqtaVoEXiS3sWBURXr1N81"></script>
 <script src="/bundles/validate?v=S3kD1lOwDYpGFma3pYezc1eM5lZqQPgYj__GN1KhoVo1"></script>
 
 
