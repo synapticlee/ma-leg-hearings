@@ -22,7 +22,7 @@
     <title>Hearings &amp; Events</title>
 
     <!-- Core CSS -->
-    <link href="/bundles/css/core?v=Rj1NbqLxSUVgKGU8sWaXl0a6xIbECr9fgMlmHyaWpog1" rel="stylesheet"/>
+    <link href="/bundles/css/core?v=MGJBMoCVYQTOi1NYU8bChbzcz29_jiqCWQyYqqH7SQU1" rel="stylesheet"/>
 
 
     <!-- Fonts -->
@@ -69,10 +69,10 @@
         <!--Header-->
         <header>
     <div class="visible-lg-inline weatherBox">
-    <span class="weatherDate">May 04, 2025</span>
-    <img id="wicon" class="weatherIcon" src="https://openweathermap.org/img/w/04n.png" alt="Clouds">
+    <span class="weatherDate">May 05, 2025</span>
+    <img id="wicon" class="weatherIcon" src="https://openweathermap.org/img/w/10n.png" alt="Rain">
     <span class="weatherDivider"> &#124; </span>
-    <span class="weatherStats">61&deg;F</span>
+    <span class="weatherStats">54&deg;F</span>
 </div>
 
     <div class="container">
@@ -91,7 +91,7 @@
                 <div id="loginFlyout" class="dropdown-menu dropdownLogin" aria-live="assertive">
                     <h2 class="text-center loginTitle">MyLegislature</h2>
 <p class="sr-only">Use MyLegislature to follow bills, hearings, and legislators that interest you.</p>
-<form action="/Account/Login?isModal=False" class="form-horizontal clearfix" data-ajax="true" data-ajax-begin="inProgress" data-ajax-complete="loginFlyoutFormOnComplete" data-ajax-method="POST" id="loginFlyoutForm" method="post" role="form"><input name="__RequestVerificationToken" type="hidden" value="i6hFvzGRjzngVihuiZFHzib1EAO0OWwffqgJo_KB8ISx3OBhcjk_Jmw6l0ys7WxXKofrUhZt1BjWgSWEl0BuZ3yeylU1" />
+<form action="/Account/Login?isModal=False" class="form-horizontal clearfix" data-ajax="true" data-ajax-begin="inProgress" data-ajax-complete="loginFlyoutFormOnComplete" data-ajax-method="POST" id="loginFlyoutForm" method="post" role="form"><input name="__RequestVerificationToken" type="hidden" value="ku3g_k1-yYI2SuqFqSKHYG0IWWWSZE3qaFi1y-i8ERvvx_7pUglGmSxX7yT_6rlCkbeSQ5BSs41S2foCKYJWY9icsOQ1" />
 <legend class="text-center legSignIn">Sign in with MyLegislature Account</legend>
 <span class="requiredFields">* Indicates required fields</span>
 <div class="form-group">
@@ -691,6 +691,152 @@
 </li>
             </ul>
         </li>
+    </ul>
+</div>
+                        <button class="sr-only sr-only-focusable btn-link" onclick="closeNavMenu()">Close Menu</button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+</li>
+<li class="dropdown yamm-fw">
+        <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">Clerks</a>
+        <ul class="dropdown-menu">
+            <li>
+                <div class="yamm-content">
+                    <div class="row">
+<div class="col-xs-12 col-sm-3">
+    <ul class="list-unstyled">
+        <li>
+            <h3>
+                <a href="/">Dockets</a>
+            </h3>
+            <ul class="list-unstyled">
+<li class="form-group">
+    <form action="/Search" method="get">    <label class="" for="docketsSearch">Search Dockets</label>
+    <div class="typeahead-container">
+        <div class="typeahead-field">
+            <div class="input-group typeahead-query ">
+                <input
+                    id="docketsSearch"
+                    name="SearchTerms"
+                    class="searchBox form-control"
+                    type="search"
+                    value=""
+                    data-tt-search-type="Dockets"
+                    data-tt-search-reset="Dockets"
+                    data-tt-url="/TypeAheadSearch"
+                    data-tt-branch=""
+                    data-tt-limit="7"
+                    aria-haspopup="true"
+                    aria-autocomplete="list"
+                    autocomplete="off"
+                    placeholder="Search Dockets..."/>
+                <div class="input-group-btn typeahead-button">
+
+                    <button type="submit" class="btn btn-primary searchButton" aria-label="Search the Legislature">
+<span class="fa fa-search"></span><span class="sr-only">Search</span> 
+                    </button>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</form>
+</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="col-xs-12 col-sm-3">
+    <ul class="list-unstyled">
+        <li>
+            <h3>
+                <a href="/ClerksOffice/Senate">Senate Clerk</a>
+            </h3>
+            <ul class="list-unstyled">
+<li>
+    <a href="/ClerksOffice/Senate/Agenda">
+        Agenda
+            </a>
+</li>
+<li>
+    <a href="/ClerksOffice/Senate/Calendar">
+        Calendar
+            </a>
+</li>
+<li>
+    <a href="/ClerksOffice/Senate/Dockets">
+        Dockets
+            </a>
+</li>
+<li>
+    <a href="/Laws/Rules/Senate">
+        Rules
+            </a>
+</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="col-xs-12 col-sm-3">
+    <ul class="list-unstyled">
+        <li>
+            <h3>
+                <a href="/ClerksOffice/House">House Clerk</a>
+            </h3>
+            <ul class="list-unstyled">
+<li>
+    <a href="/ClerksOffice/House/Calendar">
+        Calendar
+            </a>
+</li>
+<li>
+    <a href="/ClerksOffice/House/Dockets">
+        Dockets
+            </a>
+</li>
+<li>
+    <a href="/Laws/Rules/House">
+        Rules
+            </a>
+</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="col-xs-12 col-sm-3">
+    <ul class="list-unstyled">
+<li>
+    <h3>
+        <a href="/ClerksOffice/Senate/Audits">
+            Senate Audits
+                    </a>
+    </h3>
+</li>
+<li>
+    <h3>
+        <a href="/Journal/Senate">
+            Senate Journals
+                    </a>
+    </h3>
+</li>
+<li>
+    <h3>
+        <a href="/ClerksOffice/House/Audits">
+            House Audits
+                    </a>
+    </h3>
+</li>
+<li>
+    <h3>
+        <a href="/Journal/House">
+            House Journals
+                    </a>
+    </h3>
+</li>
     </ul>
 </div>
                         <button class="sr-only sr-only-focusable btn-link" onclick="closeNavMenu()">Close Menu</button>
@@ -2878,6 +3024,7 @@ Virtual Hearing                                                               </
                 <tr>
 <td class="text-center eventDate" rowspan="4">
                             <div>
+                                    <span class="today"><span class="sr-only">Go to </span>TODAY</span>
                                                                     <span class="month">MAY</span>
                                     <span class="day">5</span>
                                     <span class="month">2025</span>
@@ -2977,7 +3124,11 @@ A-2  and Virtual                                                        </td>
                         </a>
                                                         </td>
                     <td class="video">
-                                <span class="sr-only">No video available.</span>
+                                <a href="/Events/Hearings/Detail/5148"
+           title="Upcoming">
+            <span class="fa fa-video-camera"></span>
+            <span>Upcoming</span>
+        </a>
 
                     </td>
                 </tr>
@@ -3008,7 +3159,11 @@ A-2  and Virtual                                                        </td>
                         </a>
                                                         </td>
                     <td class="video">
-                                <span class="sr-only">No video available.</span>
+                                <a href="/Events/Hearings/Detail/5158"
+           title="Upcoming">
+            <span class="fa fa-video-camera"></span>
+            <span>Upcoming</span>
+        </a>
 
                     </td>
                 </tr>
@@ -3056,7 +3211,11 @@ A-2  and Virtual                                                        </td>
                         </a>
                                                         </td>
                     <td class="video">
-                                <span class="sr-only">No video available.</span>
+                                <a href="/Events/Hearings/Detail/5151"
+           title="Upcoming">
+            <span class="fa fa-video-camera"></span>
+            <span>Upcoming</span>
+        </a>
 
                     </td>
                 </tr>
@@ -3104,7 +3263,11 @@ A-2  and Virtual                                                        </td>
                         </a>
                                                         </td>
                     <td class="video">
-                                <span class="sr-only">No video available.</span>
+                                <a href="/Events/Hearings/Detail/5141"
+           title="Upcoming">
+            <span class="fa fa-video-camera"></span>
+            <span>Upcoming</span>
+        </a>
 
                     </td>
                 </tr>
@@ -3135,7 +3298,11 @@ A-2  and Virtual                                                        </td>
                         </a>
                                                         </td>
                     <td class="video">
-                                <span class="sr-only">No video available.</span>
+                                <a href="/Events/Hearings/Detail/5165"
+           title="Upcoming">
+            <span class="fa fa-video-camera"></span>
+            <span>Upcoming</span>
+        </a>
 
                     </td>
                 </tr>
@@ -3159,7 +3326,11 @@ A-2  and Virtual                                                        </td>
                         </a>
                                                         </td>
                     <td class="video">
-                                <span class="sr-only">No video available.</span>
+                                <a href="/Events/Hearings/Detail/5167"
+           title="Upcoming">
+            <span class="fa fa-video-camera"></span>
+            <span>Upcoming</span>
+        </a>
 
                     </td>
                 </tr>
@@ -3183,7 +3354,11 @@ A-2  and Virtual                                                        </td>
                         </a>
                                                         </td>
                     <td class="video">
-                                <span class="sr-only">No video available.</span>
+                                <a href="/Events/Hearings/Detail/5163"
+           title="Upcoming">
+            <span class="fa fa-video-camera"></span>
+            <span>Upcoming</span>
+        </a>
 
                     </td>
                 </tr>
@@ -3214,7 +3389,11 @@ A-2  and Virtual                                                        </td>
                         </a>
                                                         </td>
                     <td class="video">
-                                <span class="sr-only">No video available.</span>
+                                <a href="/Events/Hearings/Detail/5166"
+           title="Upcoming">
+            <span class="fa fa-video-camera"></span>
+            <span>Upcoming</span>
+        </a>
 
                     </td>
                 </tr>
@@ -3572,7 +3751,7 @@ Virtual Hearing                                                               </
                     </div>
                     <div class="col-xs-12 col-sm-7 vDivide">
                         <h5 class="text-center">Register With Your Email Address</h5>
-<form action="/Account/Register" data-ajax="true" data-ajax-begin="inProgress" data-ajax-method="POST" data-ajax-success="registrationModalFormOnSuccess" id="registrationModalForm" method="post" role="form"><input name="__RequestVerificationToken" type="hidden" value="18famqz3lSjoSu_FebIptbFswVcKt1WebYMDxJ8eAostaNhqEBTxwoxJnr3TdJsP0ZE0H70Gwc1FSC0pLDKMaFP3SRg1" />
+<form action="/Account/Register" data-ajax="true" data-ajax-begin="inProgress" data-ajax-method="POST" data-ajax-success="registrationModalFormOnSuccess" id="registrationModalForm" method="post" role="form"><input name="__RequestVerificationToken" type="hidden" value="1hOJzPZnLPsiUuvNRNaoOHJJGFRYGpZVbfS9g17irapf1Q0H-Uv45lYZ-1rtyFQ5_zMJC3WcuiyrIhHWlES6qRXfOm01" />
 
 
 <div class="form-group">
@@ -3634,7 +3813,7 @@ Virtual Hearing                                                               </
                     </div>
                     <div class="col-xs-12 col-sm-7 vDivide">
                         <h5 class="text-center sr-only">Sign In With Your MyLegislature Account</h5>
-<form action="/Account/Login?isModal=True" data-ajax="true" data-ajax-begin="inProgress" data-ajax-complete="loginModalFormOnComplete" data-ajax-method="POST" id="loginModalForm" method="post" role="form"><input name="__RequestVerificationToken" type="hidden" value="itVW259wqD-6r2sdvA29mg3A8vu_8bmK_jKG40l5Fkvt4JGcvbuqHr6dZv0Vrr7r8eUyVdLs2B2TS-xfgITuqOo0yiw1" />
+<form action="/Account/Login?isModal=True" data-ajax="true" data-ajax-begin="inProgress" data-ajax-complete="loginModalFormOnComplete" data-ajax-method="POST" id="loginModalForm" method="post" role="form"><input name="__RequestVerificationToken" type="hidden" value="nQjgQngRbBytrYHgoRFiI_IcTIUiek4k5O49CTFjjQmw_OTKF8CCYmoqwgTGgmirE9Ffp0Ut6kGVIrPODBvXMBL9qN81" />
 
 <div class="form-group">
     <label class="sr-only" for="loginEmail">Email*</label>
@@ -3680,7 +3859,7 @@ Virtual Hearing                                                               </
             </div>
             <div class="modal-body">
 <form action="/Account/ForgotPassword" data-ajax="true" data-ajax-complete="forgotPasswordModalFormOnComplete" data-ajax-method="POST" id="forgotPasswordModalForm" method="post" onsubmit="if($(this).valid()){ $(this).find(&#39;.fnEnd&#39;).show(); $(this).find(&#39;.fnStart&#39;).hide(); }" role="form">    <p><strong>Please enter your email address.</strong> If there is an account associated with that address, a password reset link will be mailed to you.</p>
-<input name="__RequestVerificationToken" type="hidden" value="gTYAy7akEmNQlrPsI7E7ncBOgMJxiZXteR2cayOHqAsPixU0e_t5N14U14Lzkh2AEzKyJ8ZGpHZ8T_Q67kIRvgPhcSM1" />    <div class="row">
+<input name="__RequestVerificationToken" type="hidden" value="aYV745piwNcFuzO7MyHcXE2qce5SVXLAlcnhPJGMwiKM2uno45SSDgkT4FQ4pQCv8199cFL5r_WmbpvRTag-Fe5_wgk1" />    <div class="row">
         <div class="form-group clearfix">
             <div class="col-sm-12 col-md-9">
                 <label class="sr-only" for="EmailAddress">Email Address</label>
