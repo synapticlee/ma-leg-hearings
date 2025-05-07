@@ -47,4 +47,4 @@ with open(output_file, "w", encoding="utf-8") as out:
         if status.lower() == "completed":
             continue
 
-        out.write(f"| {current_date} | {time} | {status} | {typ} | {event} | {location}_
+        out.write(f"| {current_date} | {time} | {status} | {typ} | {event} | {location}_ |\n") 
