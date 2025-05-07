@@ -27,8 +27,10 @@ with open(output_file, "w", encoding="utf-8") as out:
             continue
 
         # Skip rows before today 
-        if not start_parsing and any("go to today" in td.get_text(strip=True).lower() for td in cols):
-            start_parsing = True  # Start parsing from this row forward
+        if not start_parsing:
+            raw_row_text = row.decode_contents().lower()
+            if "go to today" in raw_row_text:
+                start_parsing = True
 
         if not start_parsing:
             continue  
