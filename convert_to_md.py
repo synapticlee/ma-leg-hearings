@@ -21,28 +21,26 @@ with open(output_file, "w", encoding="utf-8") as out:
     current_date = ""
     start_parsing = False
 
-    for row in rows:
+    for i, row in enumerate(rows):
         cols = row.find_all("td")
         if not cols:
             continue
 
-        # Skip rows before today 
-        if not start_parsing:
-            raw_row_text = row.decode_contents().lower()
-            if "go to today" in raw_row_text:
+        # Check if this row's first <td> is a date cell with a <span class="today">
+        first_td = cols[0]
+        if "eventDate" in first_td.get("class", []):
+            if first_td.select_one("span.today"):
                 start_parsing = True
-
-        if not start_parsing:
-            continue  
-
-        # Check if this row starts with a date cell
-        if "eventDate" in cols[0].get("class", []):
-            parts = list(cols[0].stripped_strings)
-            date_str = " ".join(parts).replace("Go to TODAY", "").strip() #remove extraneous string
-            current_date = date_str
-            data_cells = cols[1:]  # skip the star cell
+            
+            # Set the current date regardless
+            parts = list(first_td.stripped_strings)
+            current_date = " ".join(parts).replace("Go to", "").replace("TODAY", "").strip()
+            data_cells = cols[1:]
         else:
             data_cells = cols
+
+        if not start_parsing:
+            continue
 
         if len(data_cells) < 5:
             continue
