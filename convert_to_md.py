@@ -37,14 +37,14 @@ with open(output_file, "w", encoding="utf-8") as out:
         if len(data_cells) < 5:
             continue  # skip malformed rows
 
-        if "Completed" in data_cells:
-            continue # skip completed events
-
         time = data_cells[1].get_text(strip=True) if len(data_cells) > 1 else ""
         status = data_cells[2].get_text(strip=True) if len(data_cells) > 2 else ""
         typ = data_cells[3].get_text(strip=True) if len(data_cells) > 3 else ""
         event = data_cells[4].get_text(strip=True) if len(data_cells) > 4 else ""
         location = data_cells[5].get_text(strip=True) if len(data_cells) > 5 else ""
+
+        if status.lower() == "completed":
+            continue # skip completed events
 
         # Use current_date if available, otherwise leave it blank
         date_display = current_date if current_date else ""
