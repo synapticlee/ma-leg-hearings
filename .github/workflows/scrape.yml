@@ -41,7 +41,8 @@ jobs:
         cache: "pip"
     - name: Install dependencies
       run: |
-        pip install beautifulsoup4 # do pip install -r requirements.txt if there are more substantial 
+        pip install beautifulsoup4 
+    # do pip install -r requirements.txt if there are more substantial 
     # Uncomment to use Playwright via shot-scraper (put shot-scraper in requirements.txt):
     # - name: Cache Playwright browsers
     #   uses: actions/cache@v4
