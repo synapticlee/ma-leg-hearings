@@ -93,3 +93,7 @@ fi
 
 # Move to final destination
 mv "$TEMP_FILE" "$FULL_PATH"
+
+# Convert html output to a more readable markdown
+python3 convert_to_md.py "$FULL_PATH"
+
