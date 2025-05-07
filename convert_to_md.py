@@ -21,30 +21,32 @@ with open(output_file, "w", encoding="utf-8") as out:
     current_date = ""
     for row in rows:
         cols = row.find_all("td")
-
         if not cols:
             continue
 
-        # Update date if <td class="eventDate"> is present
-        date_td = row.find("td", class_="eventDate")
-        if date_td:
-            parts = list(date_td.stripped_strings)
+        # Check if this row starts with a date cell
+        if "eventDate" in cols[0].get("class", []):
+            # This row has the date
+            parts = list(cols[0].stripped_strings)
             current_date = " ".join(parts)
+            data_cells = cols[1:]  # skip the date cell
+        else:
+            # This row has no date cell
+            data_cells = cols
 
-        data_cells = cols[1:]  # skip the follow star column 
-
-        # Defensive check: must have at least 5 data cells (time, status, type, event, location)
         if len(data_cells) < 5:
-            continue
+            continue  # skip malformed rows
 
-        time = data_cells[0].get_text(strip=True)
-        status = data_cells[1].get_text(strip=True)
-        typ = data_cells[2].get_text(strip=True)
-        event = data_cells[3].get_text(strip=True)
-        location = data_cells[4].get_text(strip=True)
+        if "Completed" in data_cells:
+            continue # skip completed events
 
-        # Skip completed events
-        if status.lower() == "completed":
-            continue
+        time = data_cells[1].get_text(strip=True) if len(data_cells) > 1 else ""
+        status = data_cells[2].get_text(strip=True) if len(data_cells) > 2 else ""
+        typ = data_cells[3].get_text(strip=True) if len(data_cells) > 3 else ""
+        event = data_cells[4].get_text(strip=True) if len(data_cells) > 4 else ""
+        location = data_cells[5].get_text(strip=True) if len(data_cells) > 5 else ""
 
-        out.write(f"| {current_date} | {time} | {status} | {typ} | {event} | {location}_ |\n") 
+        # Use current_date if available, otherwise leave it blank
+        date_display = current_date if current_date else ""
+
+        out.write(f"| {date_display} | {time} | {status} | {typ} | {event} | {location} |\n")
