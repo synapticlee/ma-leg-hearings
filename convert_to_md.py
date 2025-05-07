@@ -19,23 +19,31 @@ with open(output_file, "w", encoding="utf-8") as out:
     out.write("|------|------|--------|------|--------|----------|\n")
 
     current_date = ""
+    start_parsing = False
+
     for row in rows:
         cols = row.find_all("td")
         if not cols:
             continue
 
+        # Skip rows before today 
+        if not start_parsing and any("go to today" in td.get_text(strip=True).lower() for td in cols):
+            start_parsing = True  # Start parsing from this row forward
+
+        if not start_parsing:
+            continue  
+
         # Check if this row starts with a date cell
         if "eventDate" in cols[0].get("class", []):
-            # This row has the date
             parts = list(cols[0].stripped_strings)
-            current_date = " ".join(parts)
-            data_cells = cols[1:]  # skip the date cell
+            date_str = " ".join(parts).replace("Go to TODAY", "").strip() #remove extraneous string
+            current_date = date_str
+            data_cells = cols[1:]  # skip the star cell
         else:
-            # This row has no date cell
             data_cells = cols
 
         if len(data_cells) < 5:
-            continue  # skip malformed rows
+            continue
 
         time = data_cells[1].get_text(strip=True) if len(data_cells) > 1 else ""
         status = data_cells[2].get_text(strip=True) if len(data_cells) > 2 else ""
@@ -43,10 +51,4 @@ with open(output_file, "w", encoding="utf-8") as out:
         event = data_cells[4].get_text(strip=True) if len(data_cells) > 4 else ""
         location = data_cells[5].get_text(strip=True) if len(data_cells) > 5 else ""
 
-        if status.lower() == "completed":
-            continue # skip completed events
-
-        # Use current_date if available, otherwise leave it blank
-        date_display = current_date if current_date else ""
-
-        out.write(f"| {date_display} | {time} | {status} | {typ} | {event} | {location} |\n")
+        out.write(f"| {current_date} | {time} | {status} | {typ} | {event} | {location} |\n")
