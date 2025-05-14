@@ -1,13 +1,5 @@
 | Date | Time | Status | Type | Event | Location |
 |------|------|--------|------|--------|----------|
-| MAY 13 2025 | 10:00 am | Confirmed | Hearing | Joint Committee on Financial Services | A-2                                                                                    and Virtual |
-| MAY 13 2025 | 10:30 am | Confirmed | Hearing | Joint Committee on Revenue | A-1                                                              and Virtual |
-| MAY 13 2025 | 10:30 am | Confirmed | Hearing | Joint Committee on Agriculture | B-2         and Virtual |
-| MAY 13 2025 | 11:00 am | Confirmed | Hearing | Joint Committee on Labor and Workforce Development | B-1                          and Virtual |
-| MAY 13 2025 | 1:00 pm | Confirmed | Hearing | Joint Committee on Children, Families and Persons with Disabilities | A-1                                                              and Virtual |
-| MAY 13 2025 | 1:00 pm | Confirmed | Hearing | Joint Committee on Transportation | B-2         and Virtual |
-| MAY 13 2025 | 1:00 pm | Confirmed | Hearing | Joint Committee on State Administration and Regulatory Oversight | A-2                                                                                    and Virtual |
-| MAY 13 2025 | 1:00 pm | Confirmed | Hearing | Joint Committee on Municipalities and Regional Government | B-1                          and Virtual |
 | MAY 14 2025 | 10:00 am | Confirmed | Hearing | Senate Committee on Climate Change and Global Warming | Virtual Hearing |
 | MAY 14 2025 | 1:00 pm | Confirmed | Hearing | Joint Committee on Telecommunications, Utilities and Energy | A-2                                                                                    and Virtual |
 | MAY 15 2025 | 11:00 am | Confirmed | Hearing | Status of Persons with Disabilities | Virtual Hearing |
