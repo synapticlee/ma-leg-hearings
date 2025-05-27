@@ -22,7 +22,7 @@
     <title>Hearings &amp; Events</title>
 
     <!-- Core CSS -->
-    <link href="/bundles/css/core?v=AetaYRU_1RYDEoF-07UI0uwWOHpQwEM4APHSouhhDHw1" rel="stylesheet"/>
+    <link href="/bundles/css/core?v=iIGxizy1Ha5yfgUUQ7m54-cGV8Y42bNxzKFySo4hmEQ1" rel="stylesheet"/>
 
 
     <!-- Fonts -->
@@ -69,10 +69,10 @@
         <!--Header-->
         <header>
     <div class="visible-lg-inline weatherBox">
-    <span class="weatherDate">May 26, 2025</span>
-    <img id="wicon" class="weatherIcon" src="https://openweathermap.org/img/w/03n.png" alt="Clouds">
+    <span class="weatherDate">May 27, 2025</span>
+    <img id="wicon" class="weatherIcon" src="https://openweathermap.org/img/w/01n.png" alt="Clear">
     <span class="weatherDivider"> &#124; </span>
-    <span class="weatherStats">48&deg;F</span>
+    <span class="weatherStats">52&deg;F</span>
 </div>
 
     <div class="container">
@@ -91,7 +91,7 @@
                 <div id="loginFlyout" class="dropdown-menu dropdownLogin" aria-live="assertive">
                     <h2 class="text-center loginTitle">MyLegislature</h2>
 <p class="sr-only">Use MyLegislature to follow bills, hearings, and legislators that interest you.</p>
-<form action="/Account/Login?isModal=False" class="form-horizontal clearfix" data-ajax="true" data-ajax-begin="inProgress" data-ajax-complete="loginFlyoutFormOnComplete" data-ajax-method="POST" id="loginFlyoutForm" method="post" role="form"><input name="__RequestVerificationToken" type="hidden" value="EHrntfs6I-FR9ZBa9i4Ev1knlKbP6ikL7hLeYyaLKuHHw2PpIIaEuNmu4HO5RfAX0XwOpFD18oU4zr4f2_3dFtAEww81" />
+<form action="/Account/Login?isModal=False" class="form-horizontal clearfix" data-ajax="true" data-ajax-begin="inProgress" data-ajax-complete="loginFlyoutFormOnComplete" data-ajax-method="POST" id="loginFlyoutForm" method="post" role="form"><input name="__RequestVerificationToken" type="hidden" value="T0IoV93YkihUFIECFxtvcIlHsd5s8iLpKaKwk8uuRoNG5PzBuOTQu25E35lt6SFhQ-QmL3bg0INCzMlx_eXiJ_wsVxE1" />
 <legend class="text-center legSignIn">Sign in with MyLegislature Account</legend>
 <span class="requiredFields">* Indicates required fields</span>
 <div class="form-group">
@@ -214,7 +214,7 @@
                     placeholder="Search Bills..."/>
                 <div class="input-group-btn typeahead-button">
 
-                    <button type="submit" class="btn btn-primary searchButton" aria-label="Search the Legislature">
+                    <button type="submit" class="btn btn-primary searchButton" aria-label="Search Bills">
 <span class="fa fa-search"></span><span class="sr-only">Search</span> 
                     </button>
 </div>
@@ -264,7 +264,7 @@
                     placeholder="Search General Laws..."/>
                 <div class="input-group-btn typeahead-button">
 
-                    <button type="submit" class="btn btn-primary searchButton" aria-label="Search the Legislature">
+                    <button type="submit" class="btn btn-primary searchButton" aria-label="Search General Laws">
 <span class="fa fa-search"></span><span class="sr-only">Search</span> 
                     </button>
 </div>
@@ -330,7 +330,7 @@
                     placeholder="Search Session Laws..."/>
                 <div class="input-group-btn typeahead-button">
 
-                    <button type="submit" class="btn btn-primary searchButton" aria-label="Search the Legislature">
+                    <button type="submit" class="btn btn-primary searchButton" aria-label="Search Session Laws">
 <span class="fa fa-search"></span><span class="sr-only">Search</span> 
                     </button>
 </div>
@@ -590,7 +590,7 @@
                     placeholder="Search Legislators..."/>
                 <div class="input-group-btn typeahead-button">
 
-                    <button type="submit" class="btn btn-primary searchButton" aria-label="Search the Legislature">
+                    <button type="submit" class="btn btn-primary searchButton" aria-label="Search Legislators">
 <span class="fa fa-search"></span><span class="sr-only">Search</span> 
                     </button>
 </div>
@@ -731,7 +731,7 @@
                     placeholder="Search Dockets..."/>
                 <div class="input-group-btn typeahead-button">
 
-                    <button type="submit" class="btn btn-primary searchButton" aria-label="Search the Legislature">
+                    <button type="submit" class="btn btn-primary searchButton" aria-label="Search Dockets">
 <span class="fa fa-search"></span><span class="sr-only">Search</span> 
                     </button>
 </div>
@@ -877,7 +877,7 @@
                     placeholder="Search Events..."/>
                 <div class="input-group-btn typeahead-button">
 
-                    <button type="submit" class="btn btn-primary searchButton" aria-label="Search the Legislature">
+                    <button type="submit" class="btn btn-primary searchButton" aria-label="Search Events">
 <span class="fa fa-search"></span><span class="sr-only">Search</span> 
                     </button>
 </div>
@@ -997,7 +997,7 @@
                     placeholder="Search Committees..."/>
                 <div class="input-group-btn typeahead-button">
 
-                    <button type="submit" class="btn btn-primary searchButton" aria-label="Search the Legislature">
+                    <button type="submit" class="btn btn-primary searchButton" aria-label="Search Committees">
 <span class="fa fa-search"></span><span class="sr-only">Search</span> 
                     </button>
 </div>
@@ -1080,6 +1080,13 @@
             Committee Book
                             <span class="fa fa-file-pdf-o"></span>
         </a>
+    </h3>
+</li>
+<li>
+    <h3>
+        <a href="/Committees/HearingAttendanceOverview">
+            House Hearing Attendance
+                    </a>
     </h3>
 </li>
     </ul>
@@ -1376,7 +1383,7 @@
                             </div>
                         </td>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -1389,7 +1396,7 @@
                             </a>
                         </td>
                                     <td>
-A-2/Virtual                                                        </td>
+A-2/Virtual                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5087"
            title="Archived">
@@ -1408,7 +1415,7 @@ A-2/Virtual                                                        </td>
                             </div>
                         </td>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -1424,7 +1431,7 @@ A-2/Virtual                                                        </td>
                         <a href="/GetMap/426" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             Gardner Auditorium                                           and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5088"
            title="Archived">
@@ -1443,7 +1450,7 @@ A-2/Virtual                                                        </td>
                             </div>
                         </td>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -1456,7 +1463,7 @@ A-2/Virtual                                                        </td>
                             </a>
                         </td>
                                     <td>
-Gloucester City Hall, 9 Dale Avenue and Virtual                                                        </td>
+Gloucester City Hall, 9 Dale Avenue and Virtual                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5090"
            title="Archived">
@@ -1475,7 +1482,7 @@ Gloucester City Hall, 9 Dale Avenue and Virtual                                 
                             </div>
                         </td>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -1488,7 +1495,7 @@ Gloucester City Hall, 9 Dale Avenue and Virtual                                 
                             </a>
                         </td>
                                     <td>
-Virtual Hearing                                                               </td>
+Virtual Hearing                                           </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5092"
            title="Archived">
@@ -1500,7 +1507,7 @@ Virtual Hearing                                                               </
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -1513,7 +1520,7 @@ Virtual Hearing                                                               </
                             </a>
                         </td>
                                     <td>
-Springfield Jewish Community Center                                                        </td>
+Springfield Jewish Community Center                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5089"
            title="Archived">
@@ -1525,7 +1532,7 @@ Springfield Jewish Community Center                                             
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -1538,7 +1545,7 @@ Springfield Jewish Community Center                                             
                             </a>
                         </td>
                                     <td>
-Virtual Hearing                                                               </td>
+Virtual Hearing                                           </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5093"
            title="Archived">
@@ -1557,7 +1564,7 @@ Virtual Hearing                                                               </
                             </div>
                         </td>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -1573,7 +1580,7 @@ Virtual Hearing                                                               </
                         <a href="/GetMap/422" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             A-1                                                                               and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5094"
            title="Archived">
@@ -1592,7 +1599,7 @@ Virtual Hearing                                                               </
                             </div>
                         </td>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -1608,7 +1615,7 @@ Virtual Hearing                                                               </
                         <a href="/GetMap/426" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             Gardner Auditorium                                          
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5091"
            title="Archived">
@@ -1627,7 +1634,7 @@ Virtual Hearing                                                               </
                             </div>
                         </td>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -1643,7 +1650,7 @@ Virtual Hearing                                                               </
                         <a href="/GetMap/424" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             A-2                                                                                    
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <span class="sr-only">No video available.</span>
 
@@ -1658,7 +1665,7 @@ Virtual Hearing                                                               </
                             </div>
                         </td>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -1671,7 +1678,7 @@ Virtual Hearing                                                               </
                             </a>
                         </td>
                                     <td>
-Virtual Hearing                                                               </td>
+Virtual Hearing                                           </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5107"
            title="Archived">
@@ -1683,7 +1690,7 @@ Virtual Hearing                                                               </
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -1696,7 +1703,7 @@ Virtual Hearing                                                               </
                             </a>
                         </td>
                                     <td>
-UMass Amherst and Virtual                                                        </td>
+UMass Amherst and Virtual                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5095"
            title="Archived">
@@ -1715,7 +1722,7 @@ UMass Amherst and Virtual                                                       
                             </div>
                         </td>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -1728,7 +1735,7 @@ UMass Amherst and Virtual                                                       
                             </a>
                         </td>
                                     <td>
-Doherty Memorial High School and Virtual                                                        </td>
+Doherty Memorial High School and Virtual                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5096"
            title="Archived">
@@ -1740,7 +1747,7 @@ Doherty Memorial High School and Virtual                                        
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -1756,7 +1763,7 @@ Doherty Memorial High School and Virtual                                        
                         <a href="/GetMap/422" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             A-1                                                                               and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5108"
            title="Archived">
@@ -1775,7 +1782,7 @@ Doherty Memorial High School and Virtual                                        
                             </div>
                         </td>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -1791,7 +1798,7 @@ Doherty Memorial High School and Virtual                                        
                         <a href="/GetMap/422" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             A-1                                                                              
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5110"
            title="Archived">
@@ -1803,7 +1810,7 @@ Doherty Memorial High School and Virtual                                        
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -1816,7 +1823,7 @@ Doherty Memorial High School and Virtual                                        
                             </a>
                         </td>
                                     <td>
-Virtual Hearing        and Virtual                                                        </td>
+Virtual Hearing                                           </td>
                     <td class="video">
                                 <span class="sr-only">No video available.</span>
 
@@ -1824,7 +1831,7 @@ Virtual Hearing        and Virtual                                              
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -1837,7 +1844,7 @@ Virtual Hearing        and Virtual                                              
                             </a>
                         </td>
                                     <td>
-Virtual Hearing                                                               </td>
+Virtual Hearing                                           </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5103"
            title="Archived">
@@ -1856,7 +1863,7 @@ Virtual Hearing                                                               </
                             </div>
                         </td>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -1869,7 +1876,7 @@ Virtual Hearing                                                               </
                             </a>
                         </td>
                                     <td>
-Clinton Town Hall, 242 Church Street and Virtual                                                        </td>
+Clinton Town Hall, 242 Church Street and Virtual                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5097"
            title="Archived">
@@ -1888,7 +1895,7 @@ Clinton Town Hall, 242 Church Street and Virtual                                
                             </div>
                         </td>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -1901,8 +1908,7 @@ Clinton Town Hall, 242 Church Street and Virtual                                
                             </a>
                         </td>
                                     <td>
-Cape Cod Community College and Virtual                                                                <span> <s> and Virtual</s></span>
-                </td>
+Cape Cod Community College and Virtual                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5098"
            title="Archived">
@@ -1914,7 +1920,7 @@ Cape Cod Community College and Virtual                                          
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -1927,7 +1933,7 @@ Cape Cod Community College and Virtual                                          
                             </a>
                         </td>
                                     <td>
-A-2  and Virtual                                                        </td>
+A-2  and Virtual                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5104"
            title="Archived">
@@ -1946,7 +1952,7 @@ A-2  and Virtual                                                        </td>
                             </div>
                         </td>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -1959,7 +1965,7 @@ A-2  and Virtual                                                        </td>
                             </a>
                         </td>
                                     <td>
-Virtual Hearing                                                               </td>
+Virtual Hearing                                           </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5112"
            title="Archived">
@@ -1971,7 +1977,7 @@ Virtual Hearing                                                               </
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -1987,7 +1993,7 @@ Virtual Hearing                                                               </
                         <a href="/GetMap/424" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             A-2                                                                                    
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5102"
            title="Archived">
@@ -1999,7 +2005,7 @@ Virtual Hearing                                                               </
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -2015,7 +2021,7 @@ Virtual Hearing                                                               </
                         <a href="/GetMap/422" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             A-1                                                                               and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5113"
            title="Archived">
@@ -2034,7 +2040,7 @@ Virtual Hearing                                                               </
                             </div>
                         </td>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -2050,7 +2056,7 @@ Virtual Hearing                                                               </
                         <a href="/GetMap/426" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             Gardner Auditorium                                           and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5111"
            title="Archived">
@@ -2062,7 +2068,7 @@ Virtual Hearing                                                               </
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -2075,7 +2081,7 @@ Virtual Hearing                                                               </
                             </a>
                         </td>
                                     <td>
-222                                                        </td>
+222                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5117"
            title="Archived">
@@ -2094,7 +2100,7 @@ Virtual Hearing                                                               </
                             </div>
                         </td>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -2110,7 +2116,7 @@ Virtual Hearing                                                               </
                         <a href="/GetMap/426" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             Gardner Auditorium                                           and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5109"
            title="Archived">
@@ -2129,7 +2135,7 @@ Virtual Hearing                                                               </
                             </div>
                         </td>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -2142,7 +2148,7 @@ Virtual Hearing                                                               </
                             </a>
                         </td>
                                     <td>
-Attleboro High School, One Blue Pride Way and Virtual                                                        </td>
+Attleboro High School, One Blue Pride Way and Virtual                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5099"
            title="Archived">
@@ -2154,7 +2160,7 @@ Attleboro High School, One Blue Pride Way and Virtual                           
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -2167,7 +2173,7 @@ Attleboro High School, One Blue Pride Way and Virtual                           
                             </a>
                         </td>
                                     <td>
-Newton City Hall                                                         </td>
+Newton City Hall                                     </td>
                     <td class="video">
                                 <span class="sr-only">No video available.</span>
 
@@ -2175,7 +2181,7 @@ Newton City Hall                                                         </td>
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -2188,7 +2194,7 @@ Newton City Hall                                                         </td>
                             </a>
                         </td>
                                     <td>
-Newton City Hall                                                         </td>
+Newton City Hall                                     </td>
                     <td class="video">
                                 <span class="sr-only">No video available.</span>
 
@@ -2196,7 +2202,7 @@ Newton City Hall                                                         </td>
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -2209,7 +2215,7 @@ Newton City Hall                                                         </td>
                             </a>
                         </td>
                                     <td>
-Newton City Hall                                                         </td>
+Newton City Hall                                     </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5133"
            title="Archived">
@@ -2228,7 +2234,7 @@ Newton City Hall                                                         </td>
                             </div>
                         </td>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -2244,7 +2250,7 @@ Newton City Hall                                                         </td>
                         <a href="/GetMap/422" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             A-1                                                                               and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5122"
            title="Archived">
@@ -2256,7 +2262,7 @@ Newton City Hall                                                         </td>
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -2269,7 +2275,7 @@ Newton City Hall                                                         </td>
                             </a>
                         </td>
                                     <td>
-Virtual Hearing                                                               </td>
+Virtual Hearing                                           </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5126"
            title="Archived">
@@ -2281,7 +2287,7 @@ Virtual Hearing                                                               </
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -2294,7 +2300,7 @@ Virtual Hearing                                                               </
                             </a>
                         </td>
                                     <td>
-Gardner Auditorium                                           and Virtual                                                        </td>
+Gardner Auditorium                                           and Virtual                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5100"
            title="Archived">
@@ -2306,7 +2312,7 @@ Gardner Auditorium                                           and Virtual        
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -2322,7 +2328,7 @@ Gardner Auditorium                                           and Virtual        
                         <a href="/GetMap/424" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             A-2                                                                                     and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5123"
            title="Archived">
@@ -2334,7 +2340,7 @@ Gardner Auditorium                                           and Virtual        
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -2350,7 +2356,7 @@ Gardner Auditorium                                           and Virtual        
                         <a href="/GetMap/422" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             A-1                                                                               and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5121"
            title="Archived">
@@ -2362,7 +2368,7 @@ Gardner Auditorium                                           and Virtual        
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -2375,7 +2381,7 @@ Gardner Auditorium                                           and Virtual        
                             </a>
                         </td>
                                     <td>
-Virtual Hearing                                                               </td>
+Virtual Hearing                                           </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5127"
            title="Archived">
@@ -2394,7 +2400,7 @@ Virtual Hearing                                                               </
                             </div>
                         </td>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -2410,7 +2416,7 @@ Virtual Hearing                                                               </
                         <a href="/GetMap/940" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             A-1 &amp; A-2  
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5130"
            title="Archived">
@@ -2422,7 +2428,7 @@ Virtual Hearing                                                               </
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -2438,7 +2444,7 @@ Virtual Hearing                                                               </
                         <a href="/GetMap/423" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             B-1                            and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5118"
            title="Archived">
@@ -2450,7 +2456,7 @@ Virtual Hearing                                                               </
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -2466,7 +2472,7 @@ Virtual Hearing                                                               </
                         <a href="/GetMap/422" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             A-1                                                                               and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5114"
            title="Archived">
@@ -2478,7 +2484,7 @@ Virtual Hearing                                                               </
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -2494,7 +2500,7 @@ Virtual Hearing                                                               </
                         <a href="/GetMap/424" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             A-2                                                                                     and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5128"
            title="Archived">
@@ -2513,7 +2519,7 @@ Virtual Hearing                                                               </
                             </div>
                         </td>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -2529,7 +2535,7 @@ Virtual Hearing                                                               </
                         <a href="/GetMap/422" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             A-1                                                                               and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5115"
            title="Archived">
@@ -2541,7 +2547,7 @@ Virtual Hearing                                                               </
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -2554,7 +2560,7 @@ Virtual Hearing                                                               </
                             </a>
                         </td>
                                     <td>
-A-2/Virtual                                                        </td>
+A-2/Virtual                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5119"
            title="Archived">
@@ -2573,7 +2579,7 @@ A-2/Virtual                                                        </td>
                             </div>
                         </td>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -2589,7 +2595,7 @@ A-2/Virtual                                                        </td>
                         <a href="/GetMap/422" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             A-1                                                                              
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5120"
            title="Archived">
@@ -2601,7 +2607,7 @@ A-2/Virtual                                                        </td>
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -2617,7 +2623,7 @@ A-2/Virtual                                                        </td>
                         <a href="/GetMap/424" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             A-2                                                                                     and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5129"
            title="Archived">
@@ -2629,7 +2635,7 @@ A-2/Virtual                                                        </td>
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -2645,7 +2651,7 @@ A-2/Virtual                                                        </td>
                         <a href="/GetMap/422" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             A-1                                                                               and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5134"
            title="Archived">
@@ -2657,7 +2663,7 @@ A-2/Virtual                                                        </td>
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -2673,7 +2679,7 @@ A-2/Virtual                                                        </td>
                         <a href="/GetMap/423" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             B-1                           
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5131"
            title="Archived">
@@ -2692,7 +2698,7 @@ A-2/Virtual                                                        </td>
                             </div>
                         </td>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -2710,7 +2716,7 @@ A-2/Virtual                                                        </td>
                         </a>
                                             <br />
                         <span style="width:50%;" class="label label-default">Updated to include Virtual</span>
-                                    </td>
+                </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5125"
            title="Archived">
@@ -2722,7 +2728,7 @@ A-2/Virtual                                                        </td>
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -2738,7 +2744,7 @@ A-2/Virtual                                                        </td>
                         <a href="/GetMap/422" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             A-1                                                                               and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5124"
            title="Archived">
@@ -2757,7 +2763,7 @@ A-2/Virtual                                                        </td>
                             </div>
                         </td>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -2773,7 +2779,7 @@ A-2/Virtual                                                        </td>
                         <a href="/GetMap/423" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             B-1                            and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5135"
            title="Archived">
@@ -2785,7 +2791,7 @@ A-2/Virtual                                                        </td>
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -2801,7 +2807,7 @@ A-2/Virtual                                                        </td>
                         <a href="/GetMap/423" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             B-1                            and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <span class="sr-only">No video available.</span>
 
@@ -2816,7 +2822,7 @@ A-2/Virtual                                                        </td>
                             </div>
                         </td>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -2832,7 +2838,7 @@ A-2/Virtual                                                        </td>
                         <a href="/GetMap/422" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             A-1                                                                               and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5137"
            title="Archived">
@@ -2844,7 +2850,7 @@ A-2/Virtual                                                        </td>
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -2857,7 +2863,7 @@ A-2/Virtual                                                        </td>
                             </a>
                         </td>
                                     <td>
-Virtual Hearing                                                               </td>
+Virtual Hearing                                           </td>
                     <td class="video">
                                 <span class="sr-only">No video available.</span>
 
@@ -2872,7 +2878,7 @@ Virtual Hearing                                                               </
                             </div>
                         </td>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -2888,7 +2894,7 @@ Virtual Hearing                                                               </
                         <a href="/GetMap/424" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             A-2                                                                                    
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5143"
            title="Archived">
@@ -2907,7 +2913,7 @@ Virtual Hearing                                                               </
                             </div>
                         </td>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -2920,7 +2926,7 @@ Virtual Hearing                                                               </
                             </a>
                         </td>
                                     <td>
-Virtual Hearing                                                               </td>
+Virtual Hearing                                           </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5149"
            title="Archived">
@@ -2932,7 +2938,7 @@ Virtual Hearing                                                               </
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -2945,7 +2951,7 @@ Virtual Hearing                                                               </
                             </a>
                         </td>
                                     <td>
-Virtual Hearing                                                               </td>
+Virtual Hearing                                           </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5150"
            title="Archived">
@@ -2964,7 +2970,7 @@ Virtual Hearing                                                               </
                             </div>
                         </td>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -2980,7 +2986,7 @@ Virtual Hearing                                                               </
                         <a href="/GetMap/424" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             A-2                                                                                     and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5146"
            title="Archived">
@@ -2992,7 +2998,7 @@ Virtual Hearing                                                               </
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -3008,7 +3014,7 @@ Virtual Hearing                                                               </
                         <a href="/GetMap/423" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             B-1                            and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5147"
            title="Archived">
@@ -3027,7 +3033,7 @@ Virtual Hearing                                                               </
                             </div>
                         </td>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -3040,7 +3046,7 @@ Virtual Hearing                                                               </
                             </a>
                         </td>
                                     <td>
-Virtual Hearing                                                               </td>
+Virtual Hearing                                           </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5164"
            title="Archived">
@@ -3052,7 +3058,7 @@ Virtual Hearing                                                               </
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -3065,7 +3071,7 @@ Virtual Hearing                                                               </
                             </a>
                         </td>
                                     <td>
-428           and Virtual                                                        </td>
+428           and Virtual                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5157"
            title="Archived">
@@ -3077,7 +3083,7 @@ Virtual Hearing                                                               </
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -3090,7 +3096,7 @@ Virtual Hearing                                                               </
                             </a>
                         </td>
                                     <td>
-A-2  and Virtual                                                        </td>
+A-2  and Virtual                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5159"
            title="Archived">
@@ -3102,7 +3108,7 @@ A-2  and Virtual                                                        </td>
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -3118,7 +3124,7 @@ A-2  and Virtual                                                        </td>
                         <a href="/GetMap/422" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             A-1                                                                               and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5148"
            title="Archived">
@@ -3137,7 +3143,7 @@ A-2  and Virtual                                                        </td>
                             </div>
                         </td>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -3153,7 +3159,7 @@ A-2  and Virtual                                                        </td>
                         <a href="/GetMap/424" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             A-2                                                                                     and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5158"
            title="Archived">
@@ -3165,7 +3171,7 @@ A-2  and Virtual                                                        </td>
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -3181,7 +3187,7 @@ A-2  and Virtual                                                        </td>
                         <a href="/GetMap/422" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             A-1                                                                               and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5145"
            title="Archived">
@@ -3193,7 +3199,7 @@ A-2  and Virtual                                                        </td>
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -3209,7 +3215,7 @@ A-2  and Virtual                                                        </td>
                         <a href="/GetMap/423" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             B-1                            and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5151"
            title="Archived">
@@ -3221,7 +3227,7 @@ A-2  and Virtual                                                        </td>
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -3237,7 +3243,7 @@ A-2  and Virtual                                                        </td>
                         <a href="/GetMap/424" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             A-2                                                                                     and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5153"
            title="Archived">
@@ -3249,7 +3255,7 @@ A-2  and Virtual                                                        </td>
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -3265,7 +3271,7 @@ A-2  and Virtual                                                        </td>
                         <a href="/GetMap/425" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             B-2           and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5141"
            title="Archived">
@@ -3284,7 +3290,7 @@ A-2  and Virtual                                                        </td>
                             </div>
                         </td>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -3300,7 +3306,7 @@ A-2  and Virtual                                                        </td>
                         <a href="/GetMap/423" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             B-1                           
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5165"
            title="Archived">
@@ -3312,7 +3318,7 @@ A-2  and Virtual                                                        </td>
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -3328,7 +3334,7 @@ A-2  and Virtual                                                        </td>
                         <a href="/GetMap/424" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             A-2                                                                                    
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5167"
            title="Archived">
@@ -3340,7 +3346,7 @@ A-2  and Virtual                                                        </td>
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -3356,7 +3362,7 @@ A-2  and Virtual                                                        </td>
                         <a href="/GetMap/422" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             A-1                                                                               and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5163"
            title="Archived">
@@ -3375,7 +3381,7 @@ A-2  and Virtual                                                        </td>
                             </div>
                         </td>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -3391,7 +3397,7 @@ A-2  and Virtual                                                        </td>
                         <a href="/GetMap/424" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             A-2                                                                                     and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5166"
            title="Archived">
@@ -3410,7 +3416,7 @@ A-2  and Virtual                                                        </td>
                             </div>
                         </td>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -3426,7 +3432,7 @@ A-2  and Virtual                                                        </td>
                         <a href="/GetMap/424" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             A-2                                                                                     and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5171"
            title="Archived">
@@ -3438,7 +3444,7 @@ A-2  and Virtual                                                        </td>
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -3454,7 +3460,7 @@ A-2  and Virtual                                                        </td>
                         <a href="/GetMap/422" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             A-1                                                                               and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5154"
            title="Archived">
@@ -3466,7 +3472,7 @@ A-2  and Virtual                                                        </td>
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -3482,7 +3488,7 @@ A-2  and Virtual                                                        </td>
                         <a href="/GetMap/424" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             A-2                                                                                     and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5168"
            title="Archived">
@@ -3494,7 +3500,7 @@ A-2  and Virtual                                                        </td>
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -3510,7 +3516,7 @@ A-2  and Virtual                                                        </td>
                         <a href="/GetMap/426" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             Gardner Auditorium                                           and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5162"
            title="Archived">
@@ -3522,7 +3528,7 @@ A-2  and Virtual                                                        </td>
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -3538,7 +3544,7 @@ A-2  and Virtual                                                        </td>
                         <a href="/GetMap/422" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             A-1                                                                               and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5177"
            title="Archived">
@@ -3557,7 +3563,7 @@ A-2  and Virtual                                                        </td>
                             </div>
                         </td>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -3573,7 +3579,7 @@ A-2  and Virtual                                                        </td>
                         <a href="/GetMap/424" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             A-2                                                                                     and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5170"
            title="Archived">
@@ -3585,7 +3591,7 @@ A-2  and Virtual                                                        </td>
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -3601,7 +3607,7 @@ A-2  and Virtual                                                        </td>
                         <a href="/GetMap/422" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             A-1                                                                               and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5178"
            title="Archived">
@@ -3613,7 +3619,7 @@ A-2  and Virtual                                                        </td>
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -3629,7 +3635,7 @@ A-2  and Virtual                                                        </td>
                         <a href="/GetMap/425" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             B-2           and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5155"
            title="Archived">
@@ -3641,7 +3647,7 @@ A-2  and Virtual                                                        </td>
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -3657,7 +3663,7 @@ A-2  and Virtual                                                        </td>
                         <a href="/GetMap/423" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             B-1                            and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5161"
            title="Archived">
@@ -3669,7 +3675,7 @@ A-2  and Virtual                                                        </td>
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -3685,7 +3691,7 @@ A-2  and Virtual                                                        </td>
                         <a href="/GetMap/422" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             A-1                                                                               and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5169"
            title="Archived">
@@ -3697,7 +3703,7 @@ A-2  and Virtual                                                        </td>
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -3713,7 +3719,7 @@ A-2  and Virtual                                                        </td>
                         <a href="/GetMap/425" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             B-2           and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5174"
            title="Archived">
@@ -3725,7 +3731,7 @@ A-2  and Virtual                                                        </td>
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -3741,7 +3747,7 @@ A-2  and Virtual                                                        </td>
                         <a href="/GetMap/424" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             A-2                                                                                     and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5176"
            title="Archived">
@@ -3753,7 +3759,7 @@ A-2  and Virtual                                                        </td>
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -3769,7 +3775,7 @@ A-2  and Virtual                                                        </td>
                         <a href="/GetMap/423" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             B-1                            and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5152"
            title="Archived">
@@ -3788,7 +3794,7 @@ A-2  and Virtual                                                        </td>
                             </div>
                         </td>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -3801,7 +3807,7 @@ A-2  and Virtual                                                        </td>
                             </a>
                         </td>
                                     <td>
-Virtual Hearing                                                               </td>
+Virtual Hearing                                           </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5156"
            title="Archived">
@@ -3813,7 +3819,7 @@ Virtual Hearing                                                               </
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -3829,7 +3835,7 @@ Virtual Hearing                                                               </
                         <a href="/GetMap/424" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             A-2                                                                                     and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5175"
            title="Archived">
@@ -3848,7 +3854,7 @@ Virtual Hearing                                                               </
                             </div>
                         </td>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -3861,7 +3867,7 @@ Virtual Hearing                                                               </
                             </a>
                         </td>
                                     <td>
-Virtual Hearing                                                               </td>
+Virtual Hearing                                           </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5181"
            title="Archived">
@@ -3873,7 +3879,7 @@ Virtual Hearing                                                               </
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -3886,7 +3892,7 @@ Virtual Hearing                                                               </
                             </a>
                         </td>
                                     <td>
-222                                                        </td>
+222                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5182"
            title="Archived">
@@ -3898,7 +3904,7 @@ Virtual Hearing                                                               </
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -3914,7 +3920,7 @@ Virtual Hearing                                                               </
                         <a href="/GetMap/422" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             A-1                                                                              
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5179"
            title="Archived">
@@ -3926,7 +3932,7 @@ Virtual Hearing                                                               </
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -3939,7 +3945,7 @@ Virtual Hearing                                                               </
                             </a>
                         </td>
                                     <td>
-437                                                        </td>
+437                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5173"
            title="Archived">
@@ -3958,7 +3964,7 @@ Virtual Hearing                                                               </
                             </div>
                         </td>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -3971,7 +3977,7 @@ Virtual Hearing                                                               </
                             </a>
                         </td>
                                     <td>
-428           and Virtual                                                        </td>
+428           and Virtual                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5185"
            title="Archived">
@@ -3984,13 +3990,14 @@ Virtual Hearing                                                               </
                 <tr>
 <td class="text-center eventDate" rowspan="2">
                             <div>
+                                    <span class="today"><span class="sr-only">Go to </span>TODAY</span>
                                                                     <span class="month">MAY</span>
                                     <span class="day">27</span>
                                     <span class="month">2025</span>
                             </div>
                         </td>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -4006,7 +4013,7 @@ Virtual Hearing                                                               </
                         <a href="/GetMap/422" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             A-1                                                                               and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <span class="sr-only">No video available.</span>
 
@@ -4014,7 +4021,7 @@ Virtual Hearing                                                               </
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -4030,7 +4037,7 @@ Virtual Hearing                                                               </
                         <a href="/GetMap/424" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             A-2                                                                                     and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <span class="sr-only">No video available.</span>
 
@@ -4045,7 +4052,7 @@ Virtual Hearing                                                               </
                             </div>
                         </td>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -4061,7 +4068,7 @@ Virtual Hearing                                                               </
                         <a href="/GetMap/422" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             A-1                                                                               and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <span class="sr-only">No video available.</span>
 
@@ -4069,7 +4076,7 @@ Virtual Hearing                                                               </
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -4085,7 +4092,7 @@ Virtual Hearing                                                               </
                         <a href="/GetMap/424" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             A-2                                                                                     and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <span class="sr-only">No video available.</span>
 
@@ -4100,7 +4107,7 @@ Virtual Hearing                                                               </
                             </div>
                         </td>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -4116,7 +4123,7 @@ Virtual Hearing                                                               </
                         <a href="/GetMap/424" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             A-2                                                                                    
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <span class="sr-only">No video available.</span>
 
@@ -4124,7 +4131,7 @@ Virtual Hearing                                                               </
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -4140,7 +4147,7 @@ Virtual Hearing                                                               </
                         <a href="/GetMap/423" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             B-1                           
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <span class="sr-only">No video available.</span>
 
@@ -4155,7 +4162,7 @@ Virtual Hearing                                                               </
                             </div>
                         </td>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -4171,7 +4178,7 @@ Virtual Hearing                                                               </
                         <a href="/GetMap/426" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             Gardner Auditorium                                           and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <span class="sr-only">No video available.</span>
 
@@ -4179,7 +4186,7 @@ Virtual Hearing                                                               </
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -4195,7 +4202,7 @@ Virtual Hearing                                                               </
                         <a href="/GetMap/425" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             B-2           and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <span class="sr-only">No video available.</span>
 
@@ -4210,7 +4217,7 @@ Virtual Hearing                                                               </
                             </div>
                         </td>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -4226,7 +4233,7 @@ Virtual Hearing                                                               </
                         <a href="/GetMap/423" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             B-1                            and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <span class="sr-only">No video available.</span>
 
@@ -4234,7 +4241,7 @@ Virtual Hearing                                                               </
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -4250,7 +4257,7 @@ Virtual Hearing                                                               </
                         <a href="/GetMap/425" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             B-2           and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <span class="sr-only">No video available.</span>
 
@@ -4258,7 +4265,7 @@ Virtual Hearing                                                               </
                 </tr>
                 <tr>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -4274,7 +4281,7 @@ Virtual Hearing                                                               </
                         <a href="/GetMap/422" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             A-1                                                                               and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <span class="sr-only">No video available.</span>
 
@@ -4289,7 +4296,7 @@ Virtual Hearing                                                               </
                             </div>
                         </td>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -4305,7 +4312,7 @@ Virtual Hearing                                                               </
                         <a href="/GetMap/423" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             B-1                            and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <span class="sr-only">No video available.</span>
 
@@ -4320,7 +4327,7 @@ Virtual Hearing                                                               </
                             </div>
                         </td>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -4336,7 +4343,7 @@ Virtual Hearing                                                               </
                         <a href="/GetMap/424" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             A-2                                                                                    
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <a href="/Events/Hearings/Detail/5160"
            title="Upcoming">
@@ -4355,7 +4362,7 @@ Virtual Hearing                                                               </
                             </div>
                         </td>
                     <td>
-        <a data-target="#exclusiveFeatureModal"  data-toggle="modal" aria-pressed="false" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
+        <a aria-label="Follow in MyLegislature" aria-pressed="false" data-target="#exclusiveFeatureModal"  data-toggle="modal" title="Follow in MyLegislature" aria-haspopup="true" tabindex="0">
             <span class="fa fa-star fa-fw mlNotFollowing"></span>
         </a>
                     </td>
@@ -4371,7 +4378,7 @@ Virtual Hearing                                                               </
                         <a href="/GetMap/423" data-toggle="modal" data-target="#locationModal" aria-haspopup="true">
                             B-1                            and Virtual
                         </a>
-                                                        </td>
+                                    </td>
                     <td class="video">
                                 <span class="sr-only">No video available.</span>
 
@@ -4558,7 +4565,7 @@ Virtual Hearing                                                               </
                     </div>
                     <div class="col-xs-12 col-sm-7 vDivide">
                         <h5 class="text-center">Register With Your Email Address</h5>
-<form action="/Account/Register" data-ajax="true" data-ajax-begin="inProgress" data-ajax-method="POST" data-ajax-success="registrationModalFormOnSuccess" id="registrationModalForm" method="post" role="form"><input name="__RequestVerificationToken" type="hidden" value="x5NzHmB9FHQ0sU9aefbEgArmVCQClBNqvl_oOZBTaZHRQ-RjGAYrJ7zORo7jdoy9EjzY6-i-N-VSMI1YBuMZR1AVYX81" />
+<form action="/Account/Register" data-ajax="true" data-ajax-begin="inProgress" data-ajax-method="POST" data-ajax-success="registrationModalFormOnSuccess" id="registrationModalForm" method="post" role="form"><input name="__RequestVerificationToken" type="hidden" value="ajkZsOqq3195SLoGpX8nhgbc31QpvUBFp7qbQJawS29uNLzD4_Tw_636GuY0-fsgFj2NOCuIZz3GwagJFXviTN_i8Jw1" />
 
 
 <div class="form-group">
@@ -4620,7 +4627,7 @@ Virtual Hearing                                                               </
                     </div>
                     <div class="col-xs-12 col-sm-7 vDivide">
                         <h5 class="text-center sr-only">Sign In With Your MyLegislature Account</h5>
-<form action="/Account/Login?isModal=True" data-ajax="true" data-ajax-begin="inProgress" data-ajax-complete="loginModalFormOnComplete" data-ajax-method="POST" id="loginModalForm" method="post" role="form"><input name="__RequestVerificationToken" type="hidden" value="YM7dsj-bZvjWFPqipJ0VkmWrm-4OaXjDRM2gNieU8lUNX8dmmpax7FmMT4J4nfT-qbl43n_5QSIvDpviICucl-HnRF41" />
+<form action="/Account/Login?isModal=True" data-ajax="true" data-ajax-begin="inProgress" data-ajax-complete="loginModalFormOnComplete" data-ajax-method="POST" id="loginModalForm" method="post" role="form"><input name="__RequestVerificationToken" type="hidden" value="V3KtMcQfFj5ZSXr1UOB3MJDZWtS3xzIfe8NBt72duh4AAUcBxgFQsoBnJb_CZq28ibk8QH52pLm5chTZNRDmbX4_1JE1" />
 
 <div class="form-group">
     <label class="sr-only" for="loginEmail">Email*</label>
@@ -4666,7 +4673,7 @@ Virtual Hearing                                                               </
             </div>
             <div class="modal-body">
 <form action="/Account/ForgotPassword" data-ajax="true" data-ajax-complete="forgotPasswordModalFormOnComplete" data-ajax-method="POST" id="forgotPasswordModalForm" method="post" onsubmit="if($(this).valid()){ $(this).find(&#39;.fnEnd&#39;).show(); $(this).find(&#39;.fnStart&#39;).hide(); }" role="form">    <p><strong>Please enter your email address.</strong> If there is an account associated with that address, a password reset link will be mailed to you.</p>
-<input name="__RequestVerificationToken" type="hidden" value="T9R-inVySbiDm57j0irMcCJmrPmNAHc4IKa17GQnlfZpdP_pT5SU-DYE6PPuw3AY8WMtyoQvKsigY9vSquI_1ltd7gw1" />    <div class="row">
+<input name="__RequestVerificationToken" type="hidden" value="aFQDiOo9YIfRpOWoz8eZxjVhqTs0JOE2ibYUW-YaFnwR3lAz80etIy9caf-wWj08cWf5-Ci8mOlsL7dImg3vPMbYDbA1" />    <div class="row">
         <div class="form-group clearfix">
             <div class="col-sm-12 col-md-9">
                 <label class="sr-only" for="EmailAddress">Email Address</label>
@@ -4801,7 +4808,7 @@ Virtual Hearing                                                               </
 </div>
 
     <script src="/bundles/bootstrap?v=M4Nk6kIOwMFflsEKET0iPL9i5YBqbzMzvUOrd8gyCnw1"></script>
-<script src="/bundles/common?v=cSu4wWfDIHVY9faz_ccao6uqtaVoEXiS3sWBURXr1N81"></script>
+<script src="/bundles/common?v=bkoZbqaTYVe2xt4a6ULC7XaD1qDXOtoVNY8yVCxNR2c1"></script>
 <script src="/bundles/validate?v=S3kD1lOwDYpGFma3pYezc1eM5lZqQPgYj__GN1KhoVo1"></script>
 
 
