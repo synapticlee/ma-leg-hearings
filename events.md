@@ -1,14 +1,5 @@
 | Date | Time | Status | Type | Event | Location |
 |------|------|--------|------|--------|----------|
-| JUL 15 2025 | 10:00 am | Confirmed | Hearing | Joint Committee on Financial Services | A-2                                                                                                                      and Virtual |
-| JUL 15 2025 | 10:00 am | Confirmed | Hearing | Joint Committee on Community Development and Small Businesses | B-1                                    and Virtual |
-| JUL 15 2025 | 10:00 am | Confirmed | Hearing | Joint Committee on Health Care Financing | Gardner Auditorium                                              and Virtual |
-| JUL 15 2025 | 10:00 am | Confirmed | Hearing | Joint Committee on Revenue | A-1                                                                                                    and Virtual |
-| JUL 15 2025 | 10:30 am | Confirmed | Hearing | Joint Committee on Labor and Workforce Development | B-2                    and Virtual |
-| JUL 15 2025 | 1:00 pm | Confirmed | Hearing | House Committee on Federal Funding, Policy and Accountability | B-2 |
-| JUL 15 2025 | 1:00 pm | Confirmed | Hearing | Joint Committee on the Judiciary | A-2                                                                                                                      and Virtual |
-| JUL 15 2025 | 1:00 pm | Confirmed | Hearing | Joint Committee on State Administration and Regulatory Oversight | B-1                                    and Virtual |
-| JUL 15 2025 | 1:00 pm | Confirmed | Hearing | Joint Committee on Environment and Natural Resources | A-1                                                                                                    and Virtual |
 | JUL 16 2025 | 1:00 pm | Confirmed | Hearing | Joint Committee on Public Service | A-2                                                                                                                      and Virtual |
 | JUL 16 2025 | 3:00 pm | Confirmed | Hearing | Supplemental Appropriations Bill | 212 |
 | JUL 18 2025 | 1:00 pm | Confirmed | Hearing | Joint Committee on Higher Education | A-2                                                                                                                      and Virtual |
@@ -23,6 +14,7 @@
 | JUL 22 2025 | 1:00 pm | Confirmed | Hearing | Joint Committee on Tourism, Arts and Cultural Development | B-2                    and Virtual |
 | JUL 22 2025 | 1:00 pm | Confirmed | Hearing | Joint Committee on Municipalities and Regional Government | B-1                                    and Virtual |
 | JUL 22 2025 | 1:00 pm | Confirmed | Hearing | Joint Committee on Children, Families and Persons with Disabilities | A-1                                                                                                    and Virtual |
+| JUL 22 2025 | 1:00 pm | Confirmed | Hearing | Joint Committee on Veterans and Federal Affairs | A-2                                                                                                                      and Virtual |
 | JUL 23 2025 | 1:00 pm | Confirmed | Hearing | Joint Committee on Housing | A-1 |
 | JUL 24 2025 | 1:00 pm | Confirmed | Hearing | Joint Committee on Public Safety and Homeland Security | A-2 |
 | SEP 2 2025 | 1:00 pm | Confirmed | Hearing | Joint Committee on Environment and Natural Resources | A-1                                                                                                    and Virtual |
