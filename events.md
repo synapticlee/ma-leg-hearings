@@ -1,7 +1,5 @@
 | Date | Time | Status | Type | Event | Location |
 |------|------|--------|------|--------|----------|
-| JUL 21 2025 | 11:00 am | Confirmed | Hearing | Joint Committee on Education | Gardner Auditorium                                              and Virtual |
-| JUL 21 2025 | 1:00 pm | Confirmed | Hearing | Joint Committee on Bonding, Capital Expenditures and State Assets | B-1                                    and Virtual |
 | JUL 22 2025 | 10:00 am | Confirmed | Hearing | Joint Committee on Labor and Workforce Development | B-2                    and Virtual |
 | JUL 22 2025 | 10:00 am | Confirmed | Hearing | Joint Committee on State Administration and Regulatory Oversight | A-1                                                                                                     and Virtual |
 | JUL 22 2025 | 10:30 am | Confirmed | Hearing | Joint Committee on Cannabis Policy | A-2                                                                                                                           and Virtual |
